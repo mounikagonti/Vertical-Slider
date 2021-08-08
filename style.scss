@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+$transition: all 0.5s ease-in-out;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.slider_container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  .slider_left {
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    top: 0;
+    left: 0;
+    transition: $transition;
+    div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 50px;
+    }
+    .left_text1 {
+      background-color: #5e8f20;
+    }
+    .left_text2 {
+      background-color: #fac401;
+    }
+    .left_text3 {
+      background-color: #407bc9;
+    }
+    .left_text4 {
+      background-color: #f94730;
+    }
+  }
+  .slider_right {
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    top: 0;
+    left: 35%;
+    transition: $transition;
+    div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+    }
+    .img1 {
+      background-image: url('https://images.pexels.com/photos/97533/pexels-photo-97533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    }
+    .img2 {
+      background-image: url('https://images.pexels.com/photos/450052/pexels-photo-450052.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    }
+    .img3 {
+      background-image: url('https://images.pexels.com/photos/33044/sunflower-sun-summer-yellow.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    }
+    .img4 {
+      background-image: url('https://images.pexels.com/photos/707915/pexels-photo-707915.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    }
+  }
+  .button_container {
+    button {
+      position: absolute;
+      left: 35%;
+      top: 50%;
+      z-index: 100;
+      background-color: #ffffff;
+      font-size: 20px;
+      padding: 15px;
+      border: 0;
+      cursor: pointer;
+    }
+    button:hover {
+      color: #5e8f20;
+    }
+    .down_btn {
+      transform: translateX(-100%);
+      border-radius: 5px 0 0 5px;
+    }
+    .up_btn {
+      transform: translateY(-100%);
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}

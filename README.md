@@ -1,2 +1,8 @@
-# Vertical-Slider
-This is vertical slider with HTML, SCSS, JavaScript
+# Vertical Slider
+
+##### **Visit Project**
+
+
+#### **Snapshot Of Project**
+
+![Screenshot](./Screenshot.png)
