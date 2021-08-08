@@ -1,6 +1,6 @@
 # Vertical Slider
 
-##### **Visit Project**
+##### **Visit Project** https://mounikahalde.github.io/Vertical-Slider/
 
 
 #### **Snapshot Of Project**
